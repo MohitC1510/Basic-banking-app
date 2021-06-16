@@ -3,14 +3,13 @@
     height: 47px;
     font-size: $mx-size;
     font-weight: 300;
-    padding: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: none;
+    
 }
 .select{
     @extend .text-input;
 
 }
 
-.textarea{
-    @extend .text-input;
-    height: 10rem;
-}

@@ -1,17 +1,39 @@
 .header{
-    background: $primary1 ;
+    background: rgb(75, 73, 73) ;
+    height: 74px;
 }
 .header__content{
     align-items: center;
     display: flex;
-    justify-content: space-between;
     padding: $s-size 0;
+    width: 80vw;
+    margin: auto;
+}
+.header__content img{
+    height: 43px;
+    width: 56px;
+    @media(max-width: $desktop-breakpoint){
+        height: 33px;
+        width: 38px;
+      }
 }
 
 .header__title{
-    color:white;
+    color:#b9b9b9;
+    margin: 0 $m-size;
     text-decoration: none;
+
     h1{
         margin:0;
+        font-size: 2.5rem;
+        font-weight: 500;
+        @media(max-width: $desktop-breakpoint){
+            font-size: $s-size;
+            font-weight: 300;
+          }
     }
+    
+}
+.header__title:hover{
+    color: white;
 }

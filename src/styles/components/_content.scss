@@ -1,0 +1,44 @@
+.content{
+    width: 80vw;
+    margin: 3rem auto;
+}
+
+
+.transactions_table_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.transactions_table_row{
+    border-bottom: 1px solid grey;
+    padding: 0 3rem 0 2rem;
+    width: 20vw;
+}
+.transactions_table_row1{
+    @extend .transactions_table_row;
+    font-family: 'Cairo', sans-serif;
+    padding: 0.6rem 0;
+    font-weight: 500;
+    color: black; 
+
+}
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #cacccd;
+}
+.transactions_table_head{
+    margin-bottom: $s-size;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: white;
+}
+.transactions_table{
+    border-top-left-radius:8px ;
+    border-top-right-radius:8px ;
+    background-color: #00a699;
+}

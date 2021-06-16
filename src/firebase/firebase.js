@@ -12,14 +12,23 @@ const config = {
     measurementId: process.env.FIREBASE_MEASUREMENT_ID
    
   };
+
+
   firebase.initializeApp(config);
   const database=firebase.database();
   
-  const googleAuthProvider= new firebase.auth.GoogleAuthProvider();
-  googleAuthProvider.setCustomParameters({ 'prompt': 'select_account' });
+  // database.ref('Users').push({
+  //   FirstName: 'Darshan',
+  //   LastName: 'Raaval',
+  //   email: 'ravald@gmail.com',
+  //   PhoneNo: 8907589365,
+  //   Balance: '10,46,679'
+  // })
 
-  export { firebase,googleAuthProvider , database as default} ;
+  export { firebase, database as default} ;
   
+
+
 
 // //   child_removed
 // //    database.ref('Expenses').on('child_removed', (snapshot)=>[
