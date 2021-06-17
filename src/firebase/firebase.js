@@ -2,14 +2,14 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 const config = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.FIREBASE_DATABASE_URL,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID,
-    measurementId: process.env.FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyD2W8YlRCQI_nypvDsKh08V7J28QlbnAdc",
+  authDomain: "basic-banking-app-6c24c.firebaseapp.com",
+  databaseURL: "https://basic-banking-app-6c24c-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "basic-banking-app-6c24c",
+  storageBucket: "basic-banking-app-6c24c.appspot.com",
+  messagingSenderId: "169278717284",
+  appId: "1:169278717284:web:e875ba44503cc14eaa0e71",
+  measurementId: "G-E3KPBDTYS1"
    
   };
 

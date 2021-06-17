@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { TransactionListItem } from './Transactions'
 const TransactionList = (props) => (
 
   <tbody>
