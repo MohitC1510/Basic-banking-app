@@ -1,13 +1,13 @@
 .text-input{
-    border: 1px solid #cacccd;
     height: 47px;
     font-size: $mx-size;
     font-weight: 300;
     padding: 0.5rem;
     border-radius: 7px;
-    border: none;
+    border: 1px solid grey;
     
 }
+
 .select{
     @extend .text-input;
 

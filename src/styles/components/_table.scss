@@ -1,0 +1,40 @@
+.contentt{
+    width: 70vw;
+    margin: auto;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.6rem;
+    min-width: 400px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.content-table thead tr{
+    background-color: #00A09A;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th{
+    padding: 12px 35px;
+}
+.content-table td{
+    padding: 12px 35px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 3px solid #00A09A;
+}
+.content-table-td{
+    padding: 12px 35px;
+}

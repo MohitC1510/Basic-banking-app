@@ -1,7 +1,7 @@
 .button{
-    background-color: $primary;
+    background-color: #00A09A;
     border: none;
-    color: floralwhite;
+    color: white;
     display: inline-block;
     font-size: $mx-size;
     font-weight: 300;
@@ -9,9 +9,11 @@
     padding: $s-size;
     text-decoration: none;
     width: 140px;
+    border-radius: 8px;
+    transition: background 0.5s ease;
 }
 .button:hover{
-    background-color:#17a2b8 ;
+    background-color:#17a2b8;
 }
 .button--link{
     background: none;

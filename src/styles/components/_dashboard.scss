@@ -1,38 +1,29 @@
-.dashboard{
-    background: url('/images/bg1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 89vh;
-    width: auto;
-    opacity: 0.8;
-    @media(max-width: $desktop-breakpoint){
-        background-size: contain;
-        background-repeat: repeat-y;
-      }
-}
+
 .dashboard_link{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #008489;
+    border: 2px solid #00A09A;
     margin: $l-size $m-size;
-    color: white;
+    color: #6c757d;
     height: 50px;
     width: 200px;
     font-size: 2rem;
-    border-radius: 10px;
+    border-radius: 40px;
+    transition: background 0.5s ease;
+    transition: color 0.5s ease;
     @media(max-width: $desktop-breakpoint){
         margin: $s-size;
-    color: white;
     height: 25px;
     width: 100px;
     font-size: 1rem;
-      }
+}
     
 }
 .dashboard_link:hover{
-    background-color:#007771 ;
+    background:#00A09A ;
+    color: white;
 }
 .dashboard_content{
     display: flex;
@@ -43,7 +34,7 @@
     margin: auto;
 }
 .dashboard_content h1{
-    color: white;
+    color: #6c757d;
     // border: 2px solid black;
     font-size: $xl-size;
     @media(max-width: $desktop-breakpoint){

@@ -9,7 +9,16 @@ body{
     font-size: $m-size;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.6;
-    background: #e4e7e7;
+    background: url('/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: auto;
+    opacity: 0.8;
+    @media(max-width: $desktop-breakpoint){
+        background-size: contain;
+        background-repeat: repeat-y;
+      }
     }
 button{
     cursor: pointer;
@@ -17,7 +26,6 @@ button{
 button:disabled{
     cursor: default;
 }
-.isActive{
-    font-weight: bolder;
-    color: #764abc;
+.active{
+    color: #6c757d;
 }

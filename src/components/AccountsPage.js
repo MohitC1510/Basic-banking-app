@@ -14,49 +14,39 @@ class AccountsPage extends React.Component {
          this.setState({ Users: User })
       });
    };
+   //
    render() {
       return (
-         <div className="content">
-            <div className="content_tile">
-               <div className="transactions">
-                  <table className="transactions_table">
-                     <thead className="transactions_table_head">
-                        <tr>
-                           <th className="transactions_table_row">First Name</th>
-                           <th className="transactions_table_row">Last Name</th>
-                           <th className="transactions_table_row">E-mail</th>
-                           <th className="transactions_table_row">Mobile No.</th>
-                           <th className="transactions_table_row">Balance</th>
-                        </tr>
-                     </thead>
-                  </table>
-                  <div>
-                     <table>
-                        <tbody classname="transactions_table_body">
-                           {
-                              this.state.Users.map((data) => {
-                                 return (
-                                    <tr>
-                                       <th className="transactions_table_row1">{data.FirstName}</th>
-                                       <th className="transactions_table_row1">{data.LastName}</th>
-                                       <th className="transactions_table_row1">{data.email}</th>
-                                       <th className="transactions_table_row1">{data.PhoneNo}</th>
-                                       <th className="transactions_table_row1">₹{data.Balance}</th>
-                                       
-                                    </tr>
-                                    
-                                   
-                                 )
-                              })
-                           }
-                        </tbody>
-                     </table>
-                  </div>
-
-               </div>
-            </div>
+         <div className="contentt">
+            <table className="content-table">
+               <thead>
+                  <tr>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>E-mail</th>
+                     <th>Mobile No.</th>
+                     <th>Balance</th>
+                  </tr>
+               </thead>
+               <tbody >
+                  {
+                     this.state.Users.map((data) => {
+                        return (
+                           <tr>
+                              <td>{data.FirstName}</td>
+                              <td>{data.LastName}</td>
+                              <td>{data.email}</td>
+                              <td>{data.PhoneNo}</td>
+                              <td>₹{data.Balance}</td>
+                           </tr>
+                        )
+                     })
+                  }
+               </tbody>
+            </table>
 
          </div>
+
 
       )
    }
